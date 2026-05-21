@@ -5,13 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
     <style>
-        img {
-            height: 200px;
-            width: 170px;
-        }
 
+        @media (min-width: 480px) {
+            img {
+                height: 200px;
+                width: 80%;
+                margin-left: 10%;
+            }
+
+            .container {
+                display: flex;
+            }
+
+            .about {
+                flex: 1;
+            }
+
+            .info {
+                flex: 6;
+            }
+
+            .about {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                order: 1;
+            }
+
+        }
+        
         h1 {
             text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        img {
+            height: 200px;
+            
+        }
+
+        .pic {
+            display: flex;
+            justify-content: center;
         }
 
     </style>
@@ -19,55 +57,65 @@
 <body>
     
     <h1>Utkarsh Vishwakarma</h1>
-    <div class="about">
-        <img src="./assets/IMG_20211002_100310.jpg" alt="profile pic" />
-        <h2>About</h2>
-        <p>
-            Utkarsh Vishwakarma is an aspiring web developer. He is a STEM enthusiast
-            and likes development. He is interested in the fields of mathematics and computing.
-            He believes in being humble and honest in his work.  
-        </p>
-        <hr />
-    </div>
-    
-    <div class="info">
-        <h3>Educational Qualification</h3>
-        <ul>
-            <li>BSc. in Mathematics from IGNOU</li>
-            <li>10+2 in Science from Navy children School</li>
-        </ul>
-        <h3>Achievements</h3>
-        <ol>
-            <li>97.8 Percentage in class XII CBSE School topper</li>
-            <li>Admiral VS Shekhawat scholarship 2020, IHQ Navy, New Delhi</li>
-            <li>General Proficiency in Science Award 2020</li>
-            <li>Bronze medal in International Mathematics Olympiad 2018</li>
-            <li>96.4 Percentage in class X CBSE</li>
-            <li>Gold Medal in National Science Olympiad 2017 with zonal excellence in Andhra Pradesh</li>
-            <li>Medhavi award won consistently from class VII to XII</li>
-        </ol>
-        <h3>Skills</h3>
-        <ol>
-            <li>Analytical skills</li>
-            <li>Problem solving skills</li>
-            <li>Object Oriented Programming</li>
-            <li>C++ Programming (Hackerrank 5 star)</li>
-            <li>C Programming (Hackerrank 4 star)</li>
-            <li>Java Programming (Hackerrank 4 star)</li>
-            <li>Engineering design process</li>
-            <li>OS(s) known: Linux and Windows</li>
-            <li>Word, Excel and Powerpoint presentations</li>
-            <li>STEM learning and teaching</li>
-        </ol>
 
-        <h3>Hobbies</h3>
-        <p>Cooking and Yoga</p>
-        <a href="https://utkvis.github.io/html-portfolio/"><h3>Portfolio Website Link</h3></a>
-        <hr />
+    <div class="container">
+
+        <div class="about">
+            <div class="pic">
+                <img src="./assets/IMG_20211002_100310.jpg" alt="profile pic" />
+            </div>
+            
+            <h2>About</h2>
+            <p>
+                Utkarsh Vishwakarma is an aspiring web developer. He is a STEM enthusiast
+                and likes development. He is interested in the fields of mathematics and computing.
+                He believes in being humble and honest in his work.  
+            </p>
+             <div class="Contact">
+                <hr />
+                <h4>Contact Me</h4>
+                <p>Email: utkarshvishwa34@gmail.com</p>
+                <p>Mob No.: 6300256126</p>
+                <hr />
+            </div>
+        </div>
         
-        <h4>Contact Me</h4>
-        <p>Email: utkarshvishwa34@gmail.com</p>
-        <p>Mob No.: 6300256126</p>
+        <div class="info">
+            <h3>Educational Qualification</h3>
+            <ul>
+                <li>BSc. in Mathematics from IGNOU</li>
+                <li>10+2 in Science from Navy children School</li>
+            </ul>
+            <h3>Achievements</h3>
+            <ol>
+                <li>97.8 Percentage in class XII CBSE School topper</li>
+                <li>Admiral VS Shekhawat scholarship 2020, IHQ Navy, New Delhi</li>
+                <li>General Proficiency in Science Award 2020</li>
+                <li>Bronze medal in International Mathematics Olympiad 2018</li>
+                <li>96.4 Percentage in class X CBSE</li>
+                <li>Gold Medal in National Science Olympiad 2017 with zonal excellence in Andhra Pradesh</li>
+                <li>Medhavi award won consistently from class VII to XII</li>
+            </ol>
+            <h3>Skills</h3>
+            <ol>
+                <li>Analytical skills</li>
+                <li>Problem solving skills</li>
+                <li>Object Oriented Programming</li>
+                <li>C++ Programming (Hackerrank 5 star)</li>
+                <li>C Programming (Hackerrank 4 star)</li>
+                <li>Java Programming (Hackerrank 4 star)</li>
+                <li>Engineering design process</li>
+                <li>OS(s) known: Linux and Windows</li>
+                <li>Word, Excel and Powerpoint presentations</li>
+                <li>STEM learning and teaching</li>
+            </ol>
+
+            <h3>Hobbies</h3>
+            <p>Cooking and Yoga</p>
+            <a href="https://utkvis.github.io/html-portfolio/"><h3>Portfolio Website Link</h3></a>
+            
+        </div>
+
     </div>
     
 </body>
